@@ -1,0 +1,174 @@
+@font-face {
+  font-family: javan;
+  src: url(./Fonts/Javan@fontenoo/Javan/javan.ttf);
+}
+@font-face{
+  font-family: doran  ;
+  src: url(./Fonts/Doran-Medium.ttf);
+}
+@font-face {
+font-family: dirooz ;
+src: url(./Fonts/Dirooz-FD.ttf);
+}
+@font-face {
+font-family: worksans ;
+src: url(./Fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+font-family: camel;
+src: url(./Fonts/estedad/Estedad-SemiBold.ttf);
+
+}
+@font-face {
+font-family: hamrah;
+src: url(./Fonts/Hamrah@fontenoo/Hamrah.ttf);
+
+}
+
+@font-face {
+  font-family: morabba;
+  src: url(./Fonts/morabba/Morabba-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: morabba-light;
+  src: url(./Fonts/morabba/Morabba-Medium.ttf);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image:url(Photos/gradiant.jpg) ;
+  background-size: cover;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.main-container{
+  display: flex;
+  height: auto;
+  width: 80vh;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.445);
+  border-radius: 5vh;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 15px rgba(135, 135, 135, .1), 0 0 18px 3px rgba(0, 0, 0, .3);
+}
+
+.input{
+  display: flex;
+  height: fit-content;
+  width: 70vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  font-family: morabba;
+} 
+
+.heading{
+  font-size: 70px;
+  font-family: javan;  
+  color: white;
+}
+
+.taskInput{
+  width: 35vh;
+  height: 4vh;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  font-family: morabba-light;
+  border: none;
+  padding-right: 10px;
+  font-size: larger;
+}
+
+.taskInput:focus{
+  outline: 0;
+  border-width: 3px;
+  border-color: cadetblue;
+
+}
+
+.colors{
+  display: flex;
+}
+
+.color-box{
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  margin-left: 5px;
+}
+
+.color-box:hover {
+  box-shadow:inset 0px 0px 0px 0.5px rgb(0, 0, 0)
+}
+
+.btnAndColors{
+  width: 35vh;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.buttons{
+  display: flex;
+  align-items: center;
+}
+
+.erase , .add {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.notes{
+  width: 66vh;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 20vh);
+  grid-template-rows: repeat(4, 6vh);
+  row-gap: 10px;
+  column-gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+.note{
+  width: 20vh;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  border-radius: 10px;
+  word-spacing: 10px;
+}
+
+.colors :hover{
+  cursor: pointer;
+}
+
+.noteText {
+  font-family: morabba-light;
+  font-size: medium;
+  color: black;
+}
